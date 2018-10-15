@@ -1,0 +1,14 @@
+﻿@page "/Page1"
+
+<p>This is Page1, count=@PageToPage.Class.publicCount</p>
+
+<button class="btn btn-primary" onclick="@inc">Click me</button>
+
+<a href="/Page2">GO TO PAGE2</a>
+
+@functions{
+    void inc()
+    {
+        PageToPage.Class.publicCount++;
+    }
+}
