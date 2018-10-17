@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>callCS</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <app>Loading...</app>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+
+    <script>
+        function jsfunc() {
+            //setTimeout(function () {
+            DotNet.invokeMethodAsync("callCS", 'myfunc')
+                .then(r => console.log(r));
+            //},1000);
+        }
+    </script>
+
+</body>
+</html>
