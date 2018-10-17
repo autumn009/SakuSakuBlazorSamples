@@ -1,0 +1,13 @@
+﻿@page "/"
+
+<button class="btn btn-primary" onclick="@callJs">Call JS</button>
+
+@functions {
+    async void callJs()
+    {
+        var r = await JSRuntime.Current.InvokeAsync<string>(
+                "myfunc",
+                "Hello from Blazor");
+        Console.WriteLine(r);
+    }
+}
