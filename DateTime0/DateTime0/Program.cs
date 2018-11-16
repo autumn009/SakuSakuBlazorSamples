@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Blazor.Hosting;
 
-namespace DateTime
+namespace DateTime0
 {
     public class Program
     {
