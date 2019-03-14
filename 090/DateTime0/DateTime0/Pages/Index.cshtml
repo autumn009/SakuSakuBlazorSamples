@@ -1,0 +1,7 @@
+﻿@page "/"
+<input bind="@myDate" format-value="yyyy-MM-dd" />
+<p>@myDate</p>
+@functions {
+    [Parameter]
+    private DateTime myDate { get; set; } = new DateTime(2020, 1, 1);
+}
