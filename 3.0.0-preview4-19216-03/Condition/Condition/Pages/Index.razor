@@ -1,0 +1,30 @@
+﻿@page "/"
+
+@if (modeSwitch)
+{
+    <p>Mode is ON!</p>
+}
+else
+{
+    <p>Mode is off.</p>
+}
+
+@switch (modeSwitch)
+{
+    case false:
+        <p>Mode is off.</p>
+        break;
+    case true:
+        <p>Mode is ON!</p>
+        break;
+}
+
+<button class="btn btn-primary" onclick="@modeChange">Change Mode</button>
+
+@functions{
+    bool modeSwitch = false;
+    void modeChange()
+    {
+        modeSwitch = !modeSwitch;
+    }
+}
