@@ -1,0 +1,9 @@
+﻿@page "/"
+<input type="checkbox" bind="@mySwich" />
+<input type="text" bind="@myText" />
+<p>@mySwich</p>
+<p>@myText</p>
+@functions{
+    private bool mySwich = false;
+    private string myText = "REWRITE ME";
+}
