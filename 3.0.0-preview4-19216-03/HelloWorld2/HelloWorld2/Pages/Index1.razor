@@ -1,0 +1,10 @@
+﻿@page "/dhello"
+<p>@message</p>
+<button class="btn btn-primary" onclick="@Hello">Hello!</button>
+@functions {
+    string message = "Please Push Hello!";
+    void Hello()
+    {
+        message = "Another Hello World!";
+    }
+}
