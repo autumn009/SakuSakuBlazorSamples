@@ -1,0 +1,24 @@
+﻿@page "/"
+
+<p>@count</p>
+<button class="btn btn-primary" @onclick="@IncrementCount">Click me</button>
+@code{
+    private int count;
+    protected override async Task OnInitializedAsync()
+    {
+        await Console.Out.WriteLineAsync("OnInitializedAsync called");
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await Console.Out.WriteLineAsync("OnAfterRenderAsync called");
+    }
+    protected override bool ShouldRender()
+    {
+        Console.WriteLine("ShouldRender called");
+        return count % 2 == 0;
+    }
+    void IncrementCount()
+    {
+        count++;
+    }
+}
