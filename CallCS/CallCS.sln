@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29403.142
+VisualStudioVersion = 16.0.30114.128
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCS", "CallCS\CallCS.csproj", "{54778E44-E21B-4F49-ACDA-D70D9AF95149}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCS", "CallCS\CallCS.csproj", "{36FDA3A2-A83A-41B4-A14E-92615F0184CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{54778E44-E21B-4F49-ACDA-D70D9AF95149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54778E44-E21B-4F49-ACDA-D70D9AF95149}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54778E44-E21B-4F49-ACDA-D70D9AF95149}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54778E44-E21B-4F49-ACDA-D70D9AF95149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36FDA3A2-A83A-41B4-A14E-92615F0184CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36FDA3A2-A83A-41B4-A14E-92615F0184CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36FDA3A2-A83A-41B4-A14E-92615F0184CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36FDA3A2-A83A-41B4-A14E-92615F0184CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {637AA009-71FC-4546-B1B8-0FCD6C7FEDF4}
+		SolutionGuid = {E0E61E3E-0364-4A5E-858B-FA3C2DA5B3E7}
 	EndGlobalSection
 EndGlobal

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29403.142
+VisualStudioVersion = 16.0.30114.128
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallJS", "CallJS\CallJS.csproj", "{F574B3DB-6D28-4815-B3AC-ABF07DAC6378}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallJS", "CallJS\CallJS.csproj", "{38B6B257-841D-41CB-B20F-515FB3F21A8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F574B3DB-6D28-4815-B3AC-ABF07DAC6378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F574B3DB-6D28-4815-B3AC-ABF07DAC6378}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F574B3DB-6D28-4815-B3AC-ABF07DAC6378}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F574B3DB-6D28-4815-B3AC-ABF07DAC6378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B6B257-841D-41CB-B20F-515FB3F21A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B6B257-841D-41CB-B20F-515FB3F21A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B6B257-841D-41CB-B20F-515FB3F21A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B6B257-841D-41CB-B20F-515FB3F21A8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {287019B8-9112-47A3-97FC-80DACD0CC270}
+		SolutionGuid = {A37994F5-C701-45F3-A7FF-F855C5914E84}
 	EndGlobalSection
 EndGlobal
