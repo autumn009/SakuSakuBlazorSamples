@@ -13,7 +13,9 @@
 
     private void Check()
     {
-        result = Class.Sub();
+        bool b = AppDomain.CurrentDomain.GetAssemblies().Any(c => c.FullName.Contains("ClassLibrary1"));
+        int n = AppDomain.CurrentDomain.GetAssemblies().Count();
+        result = (b ? "Found" : "Not Found") + " checked " + n + "items";
     }
     private async void LoadIt()
     {
