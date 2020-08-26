@@ -12,9 +12,4 @@
     <PackageReference Include="System.Net.Http.Json" Version="5.0.0-preview.8.20407.11" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\RazorClassLibrary1\RazorClassLibrary1.csproj" />
-    <ProjectReference Include="..\RazorClassLibrary2\RazorClassLibrary2.csproj" />
-  </ItemGroup>
-
 </Project>
