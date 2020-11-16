@@ -1,0 +1,8 @@
+﻿@using Microsoft.AspNetCore.Components.Web.Extensions.Head
+@page "/"
+
+<Title Value="@address"></Title>
+
+@code{
+    private string address = DateTimeOffset.Now.ToString();
+}

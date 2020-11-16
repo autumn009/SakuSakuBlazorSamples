@@ -1,0 +1,10 @@
+﻿<span style="font-size:@cookedSize">
+    @ChildContent
+</span>
+@code {
+    private string cookedSize { get => Size + "em"; }
+    [Parameter]
+    public string Size { get; set; }
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

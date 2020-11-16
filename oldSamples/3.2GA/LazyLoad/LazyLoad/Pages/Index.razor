@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Services
+@inject LazyAssemblyLoader assemblyLoader
+
+@page "/"
+
+<p>result: @result</p>
+
+<button class="btn btn-primary" @onclick="Check">CHECK LIBRALY</button>
+<button class="btn btn-primary" @onclick="LoadIt">LOAD LIBRALY</button>
+
+@code {
+    private string result = "NOT YET";
+
+    private void Check()
+    {
+        bool b = AppDomain.CurrentDomain.GetAssemblies().Any(c => c.FullName.Contains("ClassLibrary1"));
+        int n = AppDomain.CurrentDomain.GetAssemblies().Count();
+        result = (b ? "Found" : "Not Found") + " checked " + n + "items";
+    }
+    private async void LoadIt()
+    {
+        var a = await assemblyLoader.LoadAssembliesAsync(new List<string>() { "ClassLibrary1.dll" });
+        result = "Loaded " + string.Join(',',a.Select(c=>c.FullName).ToArray());
+        this.StateHasChanged();
+    }
+}

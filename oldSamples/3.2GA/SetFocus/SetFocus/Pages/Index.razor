@@ -1,0 +1,12 @@
+﻿@page "/"
+
+<button @onclick="() => textInput1.FocusAsync()">Set Focus Here</button>
+<input @ref="textInput1" />
+<br/>
+<button @onclick="() => textInput2.FocusAsync()">Set Focus Here</button>
+<input @ref="textInput2" />
+
+@code{
+    private ElementReference textInput1;
+    private ElementReference textInput2;
+}
