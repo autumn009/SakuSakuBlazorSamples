@@ -1,0 +1,33 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+        </div>
+
+        <article class="content px-4">
+            <ErrorBoundary @ref="errorBoundary">
+                <ChildContent>
+                        @Body
+                </ChildContent>
+                <ErrorContent>
+                    <p class="my-custom-class">This is an example Error Message</p>
+                    <button class="btn btn-primary" @onclick="Resume">Resume</button>
+               </ErrorContent>
+            </ErrorBoundary>
+        </article>
+    </main>
+</div>
+@code {
+    ErrorBoundary errorBoundary;
+
+    private void Resume()
+    {
+        errorBoundary?.Recover();
+    }
+}
